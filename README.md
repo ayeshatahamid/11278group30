@@ -3,6 +3,6 @@
 Repository for Intro to Software Engineering (CEN3031)
 
 - Member1: Pedro Tirado
-- Member2:
-- Member3:
-- Member4:
+- Member2: 
+- Member3: Ayesha Tahamid
+- Member4: Matthew Revell
