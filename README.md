@@ -2,7 +2,7 @@
 
 Repository for Intro to Software Engineering (CEN3031)
 
-- Member1: Joel Rios
-- Member2:
+- Member1:
+- Member2: Joel Rios
 - Member3:
 - Member4:
