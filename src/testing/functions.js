@@ -14,4 +14,4 @@ module.exports.removeVowels = removeVowels;
 module.exports.multiply = multiply;
 
 // testing
-console.log(removeVowels(""));
+// console.log(removeVowels(""));

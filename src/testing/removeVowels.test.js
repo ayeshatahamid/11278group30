@@ -18,3 +18,7 @@ test("tries to input a number and throws error", () => {
     functions.removeVowels(0);
   }).toThrow();
 });
+
+test("test numbers in a string", () => {
+  expect(functions.removeVowels("12345")).toBe("12345");
+});
