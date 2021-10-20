@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #9CD5A5;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,14 +25,19 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #af0000;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
+
+
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@500&family=Pacifico&display=swap');
