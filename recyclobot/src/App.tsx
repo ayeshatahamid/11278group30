@@ -23,6 +23,30 @@ function App() {
       })
    }
   
+   const takePhoto = () => {
+     const width = 414;
+     const height = width / (16/9);
+
+     let video = videoRef.current;
+     let photo = photoRef.current;
+
+     photo.widht = width;
+     photo.height = height;
+
+     let ctx = photo.getContext('2d');
+     ctx.drawImage(video, 0, 0, width, height);
+     setHasPhoto(true);
+   }
+
+   const closePhoto = () => {
+    let photo = photoRef.current;
+    let ctx = photo.getContext('2d');
+
+    ctx.clearRect(0, 0, photo.width, photo.height);
+
+    setHasPhoto(false);
+
+   }
 
    useEffect(() => {
       getVideo();
@@ -33,12 +57,12 @@ function App() {
     <div className="App">
       <div className="camera">
         <video ref={videoRef}></video>
-          <button>Take Photo</button>
+          <button onClick={takePhoto}>Take Photo</button>
       </div>
-      <div className={'result' + (hasPhoto ? 'hasPhoto'
+      <div className={'result ' + (hasPhoto ? 'hasPhoto'
       : '')}>
         <canvas ref={photoRef}></canvas>
-        <button> Retake Picture</button>
+        <button onClick={closePhoto}> Retake Picture</button>
       </div>
       <header className="App-header">
         <code> Recyclobot </code>
