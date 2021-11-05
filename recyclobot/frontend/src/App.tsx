@@ -1,8 +1,18 @@
 import React, {useRef, useEffect, useState} from 'react';
 //import logo from './logo.svg';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import './App.css';
+import { Home, Tutorial } from "./pages";
 
 function App() {
+  <BrowserRouter>
+      {/* <Menu /> */}
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/tutorial" exact component={Tutorial} />
+      </Switch>
+    </BrowserRouter>
+
    const videoRef = useRef(null);
    const photoRef = useRef(null);
 
